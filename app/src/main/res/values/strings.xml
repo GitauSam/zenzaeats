@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ZenzaEats</string>
+    <string name="add_phone_number_splash">Add your phone number to get started</string>
+    <string name="separator">|</string>
+</resources>
