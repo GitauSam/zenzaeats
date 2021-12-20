@@ -2,4 +2,12 @@
     <string name="app_name">ZenzaEats</string>
     <string name="add_phone_number_splash">Add your phone number to get started</string>
     <string name="separator">|</string>
+    <string name="zenza_text_logo">Zenza</string>
+    <string name="eats_text_logo">Eats</string>
+
+    <string-array name="countries_array">
+        <item>+254</item>
+        <item>+255</item>
+        <item>+256</item>
+    </string-array>
 </resources>
