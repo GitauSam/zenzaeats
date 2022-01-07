@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_login_prompt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_login_enter_your_mobile_number"
+        android:textColor="@color/tangy_red"
+        android:fontFamily="@font/pacifico"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_login_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_prompt_number"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <Spinner
+            android:id="@+id/sp_login_country_codes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"/>
+        <EditText
+            android:id="@+id/et_login_phone_number"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/ll_login_phone_number"
+        android:text="@string/btn_splash_prompt_next_view"
+        android:fontFamily="@font/pacifico"/>
+
+    <TextView
+        android:id="@+id/tv_login_disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_next"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_login_disclaimer"/>
+
+    <Button
+        android:id="@+id/btn_login_with_fb"
+        android:layout_width="match_parent"
+        android:layout_height="50"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/pacifico"
+        android:layout_below="@+id/tv_login_disclaimer"
+        android:text="@string/continue_with_facebook"
+        android:background="@drawable/basic_hollow_button_border"/>
+
+    <Button
+        android:id="@+id/btn_login_with_gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_with_fb"
+        android:text="@string/continue_with_google"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/basic_hollow_button_border"/>
+</RelativeLayout>

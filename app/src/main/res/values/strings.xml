@@ -4,6 +4,12 @@
     <string name="separator">|</string>
     <string name="zenza_text_logo">Zenza</string>
     <string name="eats_text_logo">Eats</string>
+    <string name="country_spinner_placeholder">Country</string>
+    <string name="btn_splash_prompt_next_view">NEXT</string>
+    <string name="tv_login_enter_your_mobile_number">Enter your mobile number</string>
+    <string name="tv_login_disclaimer">If you continue, you may receive an SMS for verification. Message and data rates may apply.</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
 
     <string-array name="countries_array">
         <item>+254</item>
