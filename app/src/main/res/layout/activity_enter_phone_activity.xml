@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.EnterPhoneActivity">
+
+    <ImageView
+        android:id="@+id/iv_zenza_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/zenzaeats_splash"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_enter_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_phone_number_splash"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:fontFamily="@font/pacifico"
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"/>
+        <LinearLayout
+            android:id="@+id/ll_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_text_border"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="20dp"
+            android:paddingHorizontal="5dp">
+            <Spinner
+                android:id="@+id/sp_country_codes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"/>
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_splash_logo_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zenza_text_logo"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/pacifico" />
+        <TextView
+            android:id="@+id/tv_splash_logo_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eats_text_logo"
+            android:textColor="#c72828"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:fontFamily="@font/pacifico" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_splash_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/basic_button_border"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+        android:elevation="2dp"
+        android:fontFamily="@font/pacifico"
+        android:text="@string/btn_splash_prompt_next_view"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

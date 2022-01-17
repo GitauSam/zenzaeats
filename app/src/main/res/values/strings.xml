@@ -10,6 +10,11 @@
     <string name="tv_login_disclaimer">If you continue, you may receive an SMS for verification. Message and data rates may apply.</string>
     <string name="continue_with_facebook">Continue with Facebook</string>
     <string name="continue_with_google">Continue with Google</string>
+    <string name="tv_login_or">or</string>
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_browse">Browse</string>
+    <string name="bottom_nav_carts">Carts</string>
+    <string name="bottom_nav_account">Account</string>
 
     <string-array name="countries_array">
         <item>+254</item>

@@ -22,16 +22,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_login_prompt_number"
         android:orientation="horizontal"
-        android:layout_marginTop="12dp">
+        android:layout_marginTop="12dp"
+        android:background="#e2e2e2">
         <Spinner
             android:id="@+id/sp_login_country_codes"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"/>
+            android:layout_height="50dp"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
         <EditText
             android:id="@+id/et_login_phone_number"
             android:layout_width="fill_parent"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:backgroundTint="@color/white"
             android:textColor="@color/black" />
     </LinearLayout>
@@ -39,11 +43,12 @@
     <Button
         android:id="@+id/btn_login_next"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textSize="16sp"
+        android:layout_height="60dp"
         android:layout_below="@+id/ll_login_phone_number"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+        android:fontFamily="@font/pacifico"
         android:text="@string/btn_splash_prompt_next_view"
-        android:fontFamily="@font/pacifico"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/tv_login_disclaimer"
@@ -53,22 +58,54 @@
         android:layout_marginTop="16dp"
         android:text="@string/tv_login_disclaimer"/>
 
+    <RelativeLayout
+        android:id="@+id/rl_divider"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@+id/tv_login_disclaimer">
+
+                <View
+                    android:id="@+id/vw_divider_left"
+                    android:layout_width="183dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/tv_login_or"
+                    android:layout_toEndOf="@+id/vw_divider_left"
+                    android:textSize="16sp"
+                    android:layout_marginStart="7.5dp"/>
+                <View
+                    android:layout_width="183dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
     <Button
         android:id="@+id/btn_login_with_fb"
         android:layout_width="match_parent"
-        android:layout_height="50"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/pacifico"
+        android:layout_height="70dp"
         android:layout_below="@+id/tv_login_disclaimer"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/ic_facebook_brands"
         android:text="@string/continue_with_facebook"
-        android:background="@drawable/basic_hollow_button_border"/>
+        android:fontFamily="@font/pacifico"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
 
     <Button
         android:id="@+id/btn_login_with_gmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_below="@+id/btn_login_with_fb"
-        android:text="@string/continue_with_google"
         android:layout_marginTop="6dp"
-        android:background="@drawable/basic_hollow_button_border"/>
+        android:fontFamily="@font/pacifico"
+        android:text="@string/continue_with_google"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_google_brands"/>
 </RelativeLayout>
